@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/dark_blue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/bahr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@color/sky" />
+
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="match_parent"
+        android:layout_height="677dp"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:padding="4dp"
+            android:src="@drawable/jhm">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="1dp">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:fontFamily="@font/nunitosans_black"
+                android:gravity="center_horizontal"
+                android:text="Jahangir Hossain"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#DBE6FF"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:fontFamily="@font/nunitosans_extrabold"
+                android:gravity="center_horizontal"
+                android:text="1-1 student of CSE 11, JnU"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#D3DCF5"
+                android:textSize="15sp" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                app:cardBackgroundColor="@color/sky"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="12dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+
+                    <ImageView
+                        android:id="@+id/facebook"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_facebook" />
+
+                    <ImageView
+                        android:id="@+id/github"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_github" />
+
+                    <ImageView
+                        android:id="@+id/linkedin"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_linkedin" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/imagePreview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="34dp"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <EditText
+                    android:id="@+id/messege"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/user_post"
+                    android:fontFamily="@font/nunitosans_bold"
+                    android:gravity="center_vertical"
+                    android:hint="Report Bug or send feedback... "
+                    android:textColor="#29394B"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/send"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignStart="@+id/messege"
+                    android:layout_alignTop="@+id/messege"
+                    android:layout_alignEnd="@+id/messege"
+                    android:layout_alignBottom="@+id/messege"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:elevation="10dp"
+                    android:focusable="true"
+                    app:cardBackgroundColor="@color/colorPrimaryDark"
+                    app:cardCornerRadius="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/messege"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="3dp"
+                        app:srcCompat="@drawable/ic_send_black_24dp" />
+
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/headerView"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:background="#37607C"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userimg"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="5dp"
+            android:src="@color/dark_blue"
+            android:visibility="gone" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/edit_pro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone"
+            app:backgroundTint="@color/dark_blue"
+            app:srcCompat="@drawable/ic_edit"
+            app:tint="#BFF8FF"
+            tools:ignore="VectorDrawableCompat" />
+
+        <Button
+            android:id="@+id/login_head"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Log In"
+            android:textColor="#BFF8FF"
+            android:textSize="10sp"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="@font/nunitosans_bold"
+        android:text="                "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#C7F4FF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="@font/nunitosans_light"
+        android:paddingBottom="4dp"
+        android:text="               "
+        android:textColor="#EBF3FFFB"
+        android:textSize="15sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <FrameLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#87C9C7"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunitosans_extrabold"
+            android:text="@string/app_name"
+            android:textColor="#417A7B"
+            android:textSize="22sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:layout_marginBottom="59dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+
+
+        <com.gauravk.bubblenavigation.BubbleNavigationLinearView
+            android:id="@+id/bottom_navigation_view_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/colorPrimary"
+            android:elevation="8dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <com.gauravk.bubblenavigation.BubbleToggleView
+                android:id="@+id/l_item_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bt_active="true"
+                app:bt_colorActive="@color/red_active"
+                app:bt_colorInactive="@color/red_inactive"
+                app:bt_icon="@drawable/ic_home_black_24dp"
+                app:bt_shape="@drawable/transition_background_drawable_home"
+                app:bt_title="হোম" />
+
+            <com.gauravk.bubblenavigation.BubbleToggleView
+                android:id="@+id/l_item_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bt_badgeBackgroundColor="@color/green_active"
+                app:bt_colorActive="@color/blue_active"
+                app:bt_colorInactive="@color/blue_inactive"
+                app:bt_icon="@drawable/ic_receipt_black_24dp"
+                app:bt_shape="@drawable/transition_background_drawable_search"
+                app:bt_title="পোস্টসমূহ" />
+
+            <com.gauravk.bubblenavigation.BubbleToggleView
+                android:id="@+id/l_item_profile_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bt_colorActive="@color/blue_grey_active"
+                app:bt_colorInactive="@color/blue_grey_inactive"
+                app:bt_icon="@drawable/ic_format_line_spacing_black_24dp"
+                app:bt_shape="@drawable/transition_background_drawable_like"
+                app:bt_title="ক্যাটাগরি" />
+
+            <com.gauravk.bubblenavigation.BubbleToggleView
+                android:id="@+id/l_item_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bt_colorActive="@color/green_active"
+                app:bt_colorInactive="@color/green_inactive"
+                app:bt_icon="@drawable/ic_video_library_black_24dp"
+                app:bt_shape="@drawable/transition_background_drawable_like"
+                app:bt_title="ভিডিও" />
+
+        </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
+    </FrameLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:theme="@style/NavDrawerTextStyle"
+        android:layout_gravity="start"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/hedar"
+        app:itemIconTint="#BFF8FF"
+        app:itemTextColor="#BFF8FF"
+        app:menu="@menu/drayer_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

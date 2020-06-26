@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name">ADB Fishing</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_user">User</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="hello_blank_fragment">This is the main fragment</string>
+
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+
+    <string-array name="category">
+        <item>নোটিশ বোর্ড</item>
+        <item>চার</item>
+        <item>টোপ</item>
+        <item>বরশি</item>
+        <item>ছিপ</item>
+        <item>রীল</item>
+        <item>সুতা</item>
+        <item>মাছ পরিচিতি</item>
+        <item>বিবিধ</item>
+        <item>ফিশিং ষ্টোর</item>
+        <item>ফিশিং স্পট</item>
+        <item>টিকিট স্পট</item>
+        <item>নদীর স্পট</item>
+    </string-array>
+    <string-array name="blood">
+        <item>সিলেক্ট করুন</item>
+        <item>A+</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>A-</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>B+</item>
+        <item>B-</item>
+    </string-array>
+
+    <string-array name="district">
+        <item>সিলেক্ট করুন</item>
+        <item>Barguna</item>
+        <item>Barishal</item>
+        <item>Bagura</item>
+        <item>Bhola</item>
+        <item>Bandarban</item>
+        <item>Brahmanbaria</item>
+        <item>Bagerhat</item>
+        <item>Chattogram</item>
+        <item>Cumilla</item>
+        <item>Chuadanga</item>
+        <item>Chandpur</item>
+        <item>Coxs Bazar</item>
+        <item>Dhaka</item>
+        <item>Dinajpur</item>
+        <item>Feni</item>
+        <item>Faridpur</item>
+        <item>Gazipur</item>
+        <item>Gopalganj</item>
+        <item>Gaibandha</item>
+        <item>Habiganj</item>
+        <item>Jhalokati</item>
+        <item>Joypurhat</item>
+        <item>Jamalpur</item>
+        <item>Jashore</item>
+        <item>Jhenaidah</item>
+        <item>Khulna</item>
+        <item>Kushtia</item>
+        <item>Khagrachari</item>
+        <item>Kurigram</item>
+        <item>Lakshmipur</item>
+        <item>Lalmonirhat</item>
+        <item>Madaripur</item>
+        <item>Manikganj</item>
+        <item>Maulvibazar</item>
+        <item>Munshiganj</item>
+        <item>Mymensingh</item>
+        <item>Magura</item>
+        <item>Meherpur</item>
+        <item>Narail</item>
+        <item>Narayanganj</item>
+        <item>Narsingdi</item>
+        <item>Noakhali</item>
+        <item>Netrokona</item>
+        <item>Naogaon</item>
+        <item>Natore</item>
+        <item>Nawabganj</item>
+        <item>Nilphamari</item>
+        <item>Pabna</item>
+        <item>Panchagarh</item>
+        <item>Patuakhali</item>
+        <item>Pirojpur</item>
+        <item>Rangpur</item>
+        <item>Rajshahi</item>
+        <item>Rajbari</item>
+        <item>Rangamati</item>
+        <item>Shariatpur</item>
+        <item>Sunamganj</item>
+        <item>Satkhira</item>
+        <item>Sylhet</item>
+        <item>Sirajgonj</item>
+        <item>Sherpur</item>
+        <item>Tangail</item>
+        <item>Thakurgaon</item>
+    </string-array>
+
+    <string-array name="type">
+
+        <item>চার</item>
+        <item>টোপ</item>
+        <item>বরশি</item>
+        <item>ছিপ</item>
+        <item>রীল</item>
+        <item>সুতা</item>
+        <item>অন্যান্য</item>
+    </string-array>
+</resources>

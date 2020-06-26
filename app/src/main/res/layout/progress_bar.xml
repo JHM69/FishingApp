@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<androidx.cardview.widget.CardView
+    android:layout_width="220dp"
+    android:id="@+id/aas"
+    android:layout_height="220dp"
+    app:cardCornerRadius="110dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginRight="32dp"
+    android:layout_marginLeft="32dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:scaleType="centerCrop"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/loading"/>
+
+</androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/nunitosans_regular"
+        android:paddingBottom="15dp"
+        android:text="Processing..."
+        android:textAllCaps="false"
+        android:textColor="#CDE5FF"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aas"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunitosans_extrabold"
+        android:paddingBottom="15dp"
+        android:text="ADB Fishing"
+        android:textAllCaps="false"
+        android:textColor="#CDE5FF"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toTopOf="@+id/aas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#264557</color>
+    <color name="colorPrimaryDark">#264557</color>
+    <color name="colorAccent">#527285</color>
+
+    <color name="tab_text">#417A7B</color>
+    <color name="status">#719694</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="darkless">#375D75</color>
+    <color name="sky">#A1DCEA</color>
+    <color name="dark_blue">#3E718E</color>
+    <color name="placeholder_bg">#dddddd</color>
+
+    <color name="red_active">#FF6C64</color>
+    <color name="purple_active">#EB7BFF</color>
+    <color name="blue_active">#79D7FF</color>
+    <color name="green_active">#70FF76</color>
+    <color name="blue_grey_active">#CBD0FF</color>
+    <color name="yellow_active">#FFEE69</color>
+    <color name="orange_active">#F7B563</color>
+    <color name="grey_active">#AAAAAA</color>
+
+    <color name="red_inactive">#BFFA635C</color>
+    <color name="purple_inactive">#BFE763FC</color>
+    <color name="blue_inactive">#BF79D7FF</color>
+    <color name="green_inactive">#BF70FF76</color>
+    <color name="blue_grey_inactive">#BF8B97FA</color>
+    <color name="yellow_inactive">#BFFFEE69</color>
+    <color name="orange_inactive">#BFF7B563</color>
+    <color name="gery_inactive">#E6AAAAAA</color>
+
+    <color name="default_inactive">#CC78909C</color>
+
+    <color name="red_bg_light">#1CFFEBEE</color>
+    <color name="purple_bg_light">#1CF3E5F5</color>
+    <color name="blue_bg_light">#1CE3F2FD</color>
+    <color name="green_bg_light">#1CE8F5E9</color>
+    <color name="blue_grey_bg_light">#1CECEFF1</color>
+    <color name="yellow_bg_light">#1CFFFDE7</color>
+    <color name="orange_bg_light">#1CFFF3E0</color>
+    <color name="grey_bg_light">#1CFAFAFA</color>
+    <color name="blue">#45A8C6</color>
+    <color name="textColor">#417A7B</color>
+    <color name="SRA">#335165</color>
+
+</resources>

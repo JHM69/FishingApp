@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="#335165"
+    android:foregroundGravity="center_horizontal">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:src="@drawable/fishing2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/splash"
+        android:foregroundGravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="367dp"
+            android:layout_height="27dp"
+            android:fontFamily="@font/nunitosans_regular"
+            android:gravity="center"
+            android:text="Developed by Farhad"
+            android:textColor="@color/sky"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.636"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.947" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="57dp"
+            android:fontFamily="@font/nunitosans_extrabold"
+            android:gravity="center"
+            android:text="Angler's Dream of BD"
+            android:textColor="@color/sky"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.741" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="139dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/bold"
+            android:gravity="center"
+            android:text="স্বাগতম"
+            android:textColor="@color/sky"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.441"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.41" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="401dp"
+            android:layout_height="61dp"
+            android:fontFamily="@font/light"
+            android:gravity="center"
+            android:text="বাংলাদেশী এ্যাংলারদের ডিজিটাল ফ্ল্যাটফর্ম \n জ্ঞান হোক সকলের জন্য উন্মুক্ত"
+            android:textColor="@color/sky"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.871" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="367dp"
+            android:layout_height="27dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="Version 1.0"
+            android:textColor="@color/sky"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.791" />
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="346dp"
+            android:layout_height="121dp"
+            android:src="@drawable/ic_launcher"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.6"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

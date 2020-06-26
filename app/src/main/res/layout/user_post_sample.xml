@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    card_view:cardElevation="5dp"
+    card_view:cardBackgroundColor="@color/colorAccent"
+    card_view:cardCornerRadius="10dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginBottom="5dp"
+    card_view:cardPreventCornerOverlap="true"
+    android:id="@+id/nextP"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    app:ignore="NamespaceTypo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="0dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/pro_imagen"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="1dp"
+                android:padding="1dp"
+                android:scaleType="centerCrop"
+                app:civ_border_color="@color/colorPrimaryDark"
+                app:civ_border_width="2dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_toRightOf="@+id/image_url"
+                        android:fontFamily="@font/nunitosans_extrabold"
+                        android:text="name"
+                        android:textColor="#E9F7F7"
+                        android:textIsSelectable="false"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_toRightOf="@+id/image_url"
+                        android:fontFamily="@font/nunitosans_semibold"
+                        android:text="is at Jamuna Nodi"
+                        android:textColor="#DDE6E6"
+                        android:textIsSelectable="false"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_toRightOf="@+id/image_url"
+                    android:fontFamily="@font/nunitosans_bold"
+                    android:text="date"
+                    android:textColor="#DFEEEE"
+                    android:textIsSelectable="false"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="38dp"
+                card_view:cardCornerRadius="19dp"
+                android:id="@+id/menu"
+                android:layout_gravity="center_vertical"
+                card_view:cardElevation="0dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                card_view:cardBackgroundColor="@color/colorAccent"
+                android:layout_marginBottom="6dp"
+                android:layout_height="38dp"
+                app:ignore="InvalidId">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_gravity="center"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_delete_black_24dp"/>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bodyTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toRightOf="@+id/image_url"
+            android:fontFamily="@font/medium"
+            android:maxLines="5"
+            android:text="home"
+            android:textColor="#E1EFF0"
+            android:textIsSelectable="false"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/image_url"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            android:foregroundGravity="clip_horizontal" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

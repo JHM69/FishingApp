@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Activity.Post_deteails">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Nex"
+        android:layout_width="0dp"
+        android:layout_height="187dp"
+        app:cardBackgroundColor="#2A414E"
+        app:cardElevation="6dp"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:id="@+id/postImg"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_gravity="fill"
+            android:scaleType="centerCrop"
+            android:scaleX="1.3"
+            android:scaleY="1.3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/back"
+            android:gravity="bottom|clip_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="2dp">
+
+            <TextView
+
+                android:id="@+id/postTitleTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/medium"
+                android:textColor="#E3FFF6"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_access_time_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/dateTV"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|center_vertical"
+                        android:fontFamily="@font/light"
+                        android:gravity="center_vertical"
+                        android:textColor="#E4E3FFF6"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:gravity="center|center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_comment_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/commentCountTV"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/light"
+                        android:textColor="#D5FCFF"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="494dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nex">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="6dp"
+                    android:fontFamily="@font/medium"
+                    android:text="uvhidcs s ff u90wfes  w w90es9u0we
+sihodsofis  si i s 0 s
+sjd u  ucs sochs  0sdvnkjvvio va spehejsccioee e ew9fewfewf ff9u0e fe9fpa09u 8 r rae0arfli ef2qp87 afwfuwffwfywfwf w8uf9wiqoffy8 hd
+i90af 8f 9f uiyh gzvbvhadsnczc ccihsvhofanvs  soifa va"
+                    android:textColor="#AFC9C4"
+                    android:textIsSelectable="true"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/nunitosans_regular"
+                android:gravity="left"
+                android:text="Comments"
+                android:textColor="@color/sky"
+                app:layout_constraintBottom_toTopOf="@+id/rcv_my_post"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/body" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_my_post"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_blue"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/proImgP"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:padding="1dp"
+            android:scaleType="centerCrop"
+            app:civ_border_color="@color/colorPrimaryDark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+
+            <EditText
+                android:id="@+id/commentTextP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="17"
+                android:background="@drawable/efit_background"
+                android:fontFamily="@font/nunitosans_regular"
+                android:gravity="left"
+                android:hint="Write your comment..."
+                android:inputType="textMultiLine"
+                android:textColor="@color/sky"
+                android:textColorHint="@color/sky" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/commentBtnP"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="83"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="1dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:src="@drawable/ic_send_black_24dp"></androidx.appcompat.widget.AppCompatImageView>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

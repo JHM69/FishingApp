@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Admin.AdminMainPage">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addpost"
+        android:layout_width="103dp"
+        android:layout_height="47dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/nunitosans_bold"
+        android:text="Add Post"
+        android:textColor="@color/sky"
+        app:cornerRadius="10dp"
+        app:elevation="5dp"
+        app:icon="@drawable/ic_add_black_24dp"
+        app:iconGravity="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addvideo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.216"
+        app:rippleColor="@color/sky"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/addvideo"
+        android:layout_width="97dp"
+        android:layout_height="44dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/nunitosans_bold"
+        android:text="Add Video"
+        android:textColor="@color/sky"
+        app:cornerRadius="10dp"
+        app:elevation="5dp"
+        app:icon="@drawable/ic_add_black_24dp"
+        app:iconGravity="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/addpost"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.219"
+        app:rippleColor="@color/sky"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTMq"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addpost" />
+
+    <Button
+        android:id="@+id/buttonTMq"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/nunitosans_bold"
+        android:text="Add Marquree Text"
+        android:textColor="@color/sky"
+        app:cornerRadius="10dp"
+        app:elevation="5dp"
+        app:icon="@drawable/ic_add_black_24dp"
+        app:iconGravity="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTMq" />
+
+    <Button
+        android:id="@+id/addShop"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/nunitosans_bold"
+        android:text="Add A Shop"
+        android:textColor="@color/sky"
+        app:cornerRadius="10dp"
+        app:elevation="5dp"
+        app:icon="@drawable/ic_add_black_24dp"
+        app:iconGravity="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTMq" />
+</androidx.constraintlayout.widget.ConstraintLayout>

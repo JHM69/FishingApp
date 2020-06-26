@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "202582211459",
+    "firebase_url": "https://adbfishing.firebaseio.com",
+    "project_id": "adbfishing",
+    "storage_bucket": "adbfishing.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202582211459:android:a41478722e594265bd14b6",
+        "android_client_info": {
+          "package_name": "com.jhm69.farhad_fishingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "202582211459-9p3m73rnvno9kplkmus7hanoojoeudgn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jhm69.farhad_fishingapp",
+            "certificate_hash": "cbd266b90917b64da2dc5c274ac04c3286d5a6df"
+          }
+        },
+        {
+          "client_id": "202582211459-btu4e4a7or2og3ii33ju3kl6berp96m3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLYlHEYwRnSabh7kBMHq0VCiJsIpr5AFU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "202582211459-btu4e4a7or2og3ii33ju3kl6berp96m3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

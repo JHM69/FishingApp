@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:paddingLeft="5dp"
+    android:orientation="vertical"
+    android:paddingRight="5dp"
+    tools:context=".Activity.EditProfile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/RobotoBoldTextAppearance"
+                app:title="Edit Profile"
+                app:titleTextColor="@color/white" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/editProfileNewImage"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/ic_edit"
+                    app:layout_constraintBottom_toBottomOf="@+id/editProfileImage"
+                    app:layout_constraintStart_toEndOf="@+id/editProfileImage"
+                    app:layout_constraintTop_toTopOf="@+id/editProfileImage"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/editProfileImage"
+                    android:layout_width="114dp"
+                    android:layout_height="114dp"
+                    android:src="@drawable/not"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="14dp"
+                    android:fontFamily="@font/medium"
+                    android:text="নামঃ"
+                    android:textColor="#E3FFF6"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edit_text_background"
+                    android:fontFamily="@font/medium"
+                    android:hint="নাম"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="14dp"
+                    android:fontFamily="@font/medium"
+                    android:text="নাম্বার:"
+                    android:textColor="#E3FFF6"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/number"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edit_text_background"
+                    android:fontFamily="@font/medium"
+                    android:hint="নাম্বার"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="14dp"
+                    android:fontFamily="@font/medium"
+                    android:text="জেলা:"
+                    android:textColor="#E3FFF6"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/home"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edit_text_background"
+                    android:fontFamily="@font/medium"
+                    android:hint="ঠিকানা"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginLeft="14dp"
+                            android:fontFamily="@font/medium"
+                            android:text="রক্তের গ্রুপ:"
+                            android:textColor="#E3FFF6"
+                            android:textSize="12sp" />
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/blood"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:background="@drawable/edit_text_background"
+                            android:fontFamily="@font/medium"
+                            android:hint="রক্তের গ্রুপ"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/colorPrimary" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginLeft="20dp"
+                            android:fontFamily="@font/medium"
+                            android:text="পেশা:"
+                            android:textColor="#E3FFF6"
+                            android:textSize="12sp" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/pesha"
+                            android:layout_width="match_parent"
+                            android:layout_height="43dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/edit_text_background"
+                            android:fontFamily="@font/medium"
+                            android:hint="পেশা"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/colorPrimary" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="14dp"
+                    android:fontFamily="@font/medium"
+                    android:text="ফেসবুক প্রোফাইল লিংক:"
+                    android:textColor="#E3FFF6"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/facebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edit_text_background"
+                    android:fontFamily="@font/medium"
+                    android:hint="ফেসবুক প্রোফাইল লিংক"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/fab_submit_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="60dp"
+                    android:background="@drawable/button_background"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/semibold"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:text="এডিট সম্পন্ন হয়েছে"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/ic_done_black_24dp"
+                    app:tint="@color/colorPrimary"
+                    tools:ignore="VectorDrawableCompat" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

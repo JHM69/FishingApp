@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:paddingLeft="5dp"
+    android:orientation="vertical"
+    android:paddingRight="5dp"
+    tools:context=".Activity.EditProfile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/RobotoBoldTextAppearance"
+                app:title="Add a Store"
+                app:titleTextColor="@color/white" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/editProfileNewImage"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/ic_edit"
+                    app:layout_constraintBottom_toBottomOf="@+id/editProfileImage"
+                    app:layout_constraintStart_toEndOf="@+id/editProfileImage"
+                    app:layout_constraintTop_toTopOf="@+id/editProfileImage"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/editProfileImage"
+                    android:layout_width="114dp"
+                    android:layout_height="114dp"
+                    android:src="@drawable/not"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edit_text_background"
+                    android:fontFamily="@font/medium"
+                    android:hint="স্টোরের নাম"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/number"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edit_text_background"
+                    android:fontFamily="@font/medium"
+                    android:hint="নাম্বার"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/home"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edit_text_background"
+                    android:fontFamily="@font/medium"
+                    android:hint="ঠিকানা"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="74dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edit_text_background"
+                    android:fontFamily="@font/medium"
+                    android:hint="বিবরণ"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/fab_submit_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="60dp"
+                    android:background="@drawable/button_background"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/semibold"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:text="সম্পন্ন হয়েছে"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/ic_done_black_24dp"
+                    app:tint="@color/colorPrimary"
+                    tools:ignore="VectorDrawableCompat" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
